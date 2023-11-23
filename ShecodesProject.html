@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiction</title>
+    <style>
+      h1 {
+        font-family: serif;
+        color: #dddddd;
+        background: linear-gradient(#777777, #ccaa99);
+        border: 1px solid whitesmoke;
+        padding: 60px 10px;
+        border-radius: 4px;
+        margin: 0px 0px;
+        font-size: 56px;
+      }
+      h2 {
+        color: #dddddd;
+      }
+      h3 {
+        font-weight: 300;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 4px;
+      }
+      p {
+        border: 2px double #dddddd;
+        border-radius: 4px;
+        margin: 0px 20px;
+        font-size: 23px;
+        text-align: left;
+        line-height: 1.5;
+        max-width: fit-content;
+      }
+      a {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .main {
+        background: linear-gradient(
+          #dddddd,
+          #ccaa99,
+          #998899,
+          #777799,
+          #777777
+        );
+        display: block;
+        text-align: center;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #dddddd;
+        border: 1px solid #777799;
+        color: #777799;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        color: #dddddd;
+        background: #777799;
+        cursor: pointer;
+      }
+      h4 {
+        text-align: center;
+        font-family: monospace;
+        font-weight: lighter;
+        font-size: 16px;
+      }
+      span {
+        color: #777777;
+        font-family: cursive;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>
+        Escape Reality<br />
+        <span>Through Fiction</span>
+      </h1>
+      <hr />
+      <img
+        src="https://t4.ftcdn.net/jpg/05/49/63/25/360_F_549632511_MtzPbBK7Y7Z7NN51DY6nEWthK4WXM0d7.jpg"
+        alt="An alternate world"
+      />
+
+      <p>
+        <strong>Fictional books</strong> refers to literature created from the
+        imagination. Mysteries, science fiction, romance, fantasy, chick lit,
+        crime thrillers are all fiction genres. A fictional book may provide the
+        basis of the plot of a story, a common thread in a series of books or
+        other works, or the works of a particular writer or canon of work. You
+        can create an entire world with your imagination. Sometimes all we need
+        is a break from this world and let our minds take us to places.<br />
+        <a href="https://www.twinkl.nl/teaching-wiki/fiction" target="blank">
+          <em>Read more</em>
+        </a>
+      </p>
+      <h2>Don't know where to start?</h2>
+      <h3>Click below to get personalized recomendations</h3>
+      <button>📚Register Now</button>
+      <h4>
+        Coded by
+        <a href="http://www.instagram.com/its._edom" target="blank"
+          ><em>Edom M.</em></a
+        >
+      </h4>
+    </div>
+    <script>
+      function register() {
+        let name = prompt("Hello stranger, what's your name?");
+        let age = prompt("How old are you?");
+        if (age < 16) {
+          alert("Please refer to the kids section. Thank you for your visit!");
+        } else {
+          let email = prompt("What's your email?");
+          alert("Welcome " + name + " you have successfully registered!");
+          alert(
+            "A questionaire has been sent to your email. We'll keep in touch!"
+          );
+        }
+      }
+      let application = document.querySelector("button");
+      application.addEventListener("click", register);
+    </script>
+  </body>
+</html>
